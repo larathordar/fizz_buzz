@@ -16,4 +16,12 @@ end
 it 'returns 1 if number is 1' do
       expect(fizz_buzz(1)).to eq 1
 end
+
+it "returns 'add a positive number' if number is negative" do
+      expect(fizz_buzz(-1)).to eq 'add a positive number'
+end
+
+it "returns 'add a number'if string" do
+      expect(fizz_buzz(String)).to eq 'add a number'
+end
 end
